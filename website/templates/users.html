@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Users{% endblock %}
+
+{% block body %}
+<form action="/users" method="post" name = "user-filter">
+    <div class="users-wrapper">
+        {%for user in users%}
+        <div class = "user-box">
+            <ul>
+                <li>AccountID: {{ user.accountID }}</li>
+                <li>Name: {{ user.name }}</li>
+                <li>Email: {{ user.email }}</li>
+                <li>Password: {{ user.password }}</li>
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+    <input type="submit" value="Students" name = "students">
+    <input type="submit" value="Teachers" name = "teachers">
+    <input type="submit" value="Reset" name = "reset">
+    </form>
+{% endblock %}

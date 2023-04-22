@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" href= "{{ url_for('static',filename='css/main.css') }}" >
+    <title>{% block title %}Home{% endblock %}</title>
+</head>
+<body>
+<header class="header">
+    <div>
+        <h1 class="title">The Test Gauntlet</h1>
+        <a href="/">Home</a>
+        <a href="/tests">Tests</a>
+        <a href="/users">Users</a>
+    </div>
+    <div>
+        <a href="/register" class="register">Sign Up</a>
+        <a href="/login" class="register">Login</a>
+    </div>
+</header>
+
+{% block body %} {% endblock %}
+
+<footer>
+<div class="legal"><p>&copy; 2019 Something. All rights reserved.</p></div>
+</footer>
+
+
+</body>
+
+</html>

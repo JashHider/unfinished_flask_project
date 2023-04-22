@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+<div class = "create_account_wrapper">
+    <p style="color: crimson; background-color: white;">Register your information: </p>
+    <div class = "register-info">
+        <form action="/register" method="post">
+            <div>
+                <label for="Name">Name:</label>
+                <input type="text" id = "Name" name = "Name">
+            </div>
+            <div>
+                <label for="Email">Email:</label>
+                <input type="text" id = "email" name = "Email">
+            </div>
+            <div>
+                <label for="Password">Password:</label>
+                <input type="text" id = "password" name = "Password">
+            </div>
+            <div>
+                <label for="isTeacher">Teaching: </label>
+                <input type="checkbox" id = "isTeacher" name = "isTeacher">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

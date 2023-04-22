@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: lightgreen;
+    width: 100%;
+}
+.header{
+background-image: linear-gradient(yellow, white, green);
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly;
+font-size: 12px;
+padding: 10px;
+}
+
+footer{
+background-color: black;
+}
+
+.legal {
+  margin-top: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+
+.register{
+border: 2px solid black;
+padding: 10px;
+border-radius: 15px;
+background-color: tan;
+color: black;
+}
+.register:hover{
+background-color: black;
+color: white;
+}
+
+
+.create_account_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #4caf50;
+    height: 500px;
+    width: 100%;
+    padding: 20px;
+}
+
+.register-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: lightblue;
+    color: blue;
+    width: 50%;
+    height: 50%;
+    padding: 5%;
+}
+
+.title{
+    background-color:white;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color: red;
+}
+
+.introduction{
+    display: flex;
+    width: fit-content;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: Century Gothic;
+}
+
+.test-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: lightblue;
+}
+.test-box{
+    background-color:lightgreen;
+    padding: 5px;
+    border-bottom-style: 5px solid red;
+}
+
+.users-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: lightblue;
+}
+
+.user-box{
+    background-color: lightblue;
+    padding: 5px;
+}

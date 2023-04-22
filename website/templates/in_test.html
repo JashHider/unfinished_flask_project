@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Now Testing{% endblock %}
+
+{% block body %}
+    <div class="test-box">
+        {%for question in testing%}
+        <div>
+            <form action="/create" method="POST">
+                <label for="answerField">Question: {{ question.testQuestion }}</label>
+                <input type="text" id = "answerField">
+                <input type="submit">
+            </form>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,1 @@
+Just use the create database command and then run everything in your MySQL code runner.

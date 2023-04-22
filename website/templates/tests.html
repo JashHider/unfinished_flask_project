@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Tests{% endblock %}
+
+{% block body %}
+<form action="/tests" method="post">
+    <a href="/tests/create">Create Test</a>
+</form>
+<div class = "test-wrapper">
+    {%for test in tests %}
+        <div class = "test-box">
+        <ul>
+        <li>Teacher: {{ test.name }}</li>
+        <a href="/testing?ID={{ test.testID }}">{{ test.testName }}</a>
+    </ul>
+    </div>
+        {% endfor %}
+    </div>
+{% endblock %}

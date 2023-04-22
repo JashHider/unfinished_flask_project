@@ -1,0 +1,24 @@
+{% block header %}
+<style>
+    .section-wrapper{
+width:100%;
+background-color: grey;
+font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+</style>
+
+<header class="section-wrapper">
+    <div>
+        <h1 class="title">The Test Gauntlet</h1>
+        <a href="/">Home</a>
+        <a href="/tests">Tests</a>
+        <h2>Users</h2>
+    </div>
+        <div>
+            <h2>Register</h2>
+            <a href="/login">Login</a>
+        </div>
+</header>
+{% endblock %}
